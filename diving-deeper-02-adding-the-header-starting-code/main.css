@@ -94,6 +94,16 @@ body {
     outline: none;
 }
 
+#key-features {
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 60px;
+}
+
+#key-features .section-title {
+    color: white;
+}
+
 /* h1 {
     font-family: sans-serif;
 } */
