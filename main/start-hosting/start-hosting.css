@@ -23,7 +23,6 @@ main {
 .signup-form input,
 .signup-form select {
     display: block;
-    /* margin-top: 1rem; */
     width: 100%;
 }
 

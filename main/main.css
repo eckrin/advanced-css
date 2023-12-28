@@ -89,7 +89,7 @@
 }
 
 @media (min-width: 40rem) {
-  .plan__list {
+  .plan__list { 
     width: 100%;
     display: flex;
     justify-content: center;
@@ -153,11 +153,11 @@
     width: 30%;
     max-width: 25rem;
   }
-}
 
-.key-feature__list {
-  display: flex;
-  justify-content: center;
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* h1 {
