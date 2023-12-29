@@ -15,7 +15,7 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
     // backdrop.style.display = "block";
     // modal.className = 'open'; // This will actually overwrite the complete class list
     modal.classList.add("open");
-    backdrop.style.display = 'block';
+    backdrop.style.display = "block";
     setTimeout(function() {
       backdrop.classList.add("open");
     }, 10);
@@ -48,21 +48,20 @@ toggleButton.addEventListener("click", function() {
   // mobileNav.style.display = 'block';
   // backdrop.style.display = 'block';
   mobileNav.classList.add("open");
-  backdrop.style.display = 'block';
+  backdrop.style.display = "block";
   setTimeout(function() {
     backdrop.classList.add("open");
   }, 10);
 });
 
-
 ctaButton.addEventListener('animationstart', function(event) {
-  console.log('Animation Started', event);
-});
+  console.log('Animation started', event);
+})
 
 ctaButton.addEventListener('animationend', function(event) {
-  console.log('Animation Ended', event);
-});
+  console.log('Animation ended', event);
+})
 
 ctaButton.addEventListener('animationiteration', function(event) {
-  console.log('Animation Iteration', event);
-});
+  console.log('Animation iteration', event);
+})
