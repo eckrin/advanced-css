@@ -10,7 +10,7 @@
 }
 
 @mixin media-min-width($width) {
-  @media(min-width: $width) {
+  @media (min-width: $width) {
     @content;
   }
 }
@@ -48,30 +48,30 @@ body {
   box-sizing: border-box;
 
   @include media-min-width(40rem) {
-    font-size: 125%;
+    width: 30rem;
   }
 }
 
 .sass-introduction {
   @extend .sass-section;
   box-shadow: $size-tiny $size-tiny $size-tiny/2 #ccc;
-}
 
-.sass-introduction p {
-  @extend .sass-section;
-  margin: 0;
+  p {
+    margin: 0;
+  }
 }
 
 .sass-details {
+  @extend .sass-section;
   margin: $size-default*2 0;
 }
 
 .section-header {
   border-bottom: $border-default;
-}
 
-.section-header h1 {
-  margin: 0 0 $size-default 0;
+  h1 {
+    margin: 0 0 $size-default 0;
+  }
 }
 
 .documentation-links {
@@ -92,23 +92,12 @@ body {
     display: block;
     padding: 0.2rem;
     border: $border-default;
-  }
 
-  .documentation-link:hover,
-  .documentation-link:active {
-    color: white;
-    background: map-get($map: $colors, $key: secondary);
-    border-color: map-get($map: $colors, $key: secondary);
-  }
-}
-
-@media (min-width: 40rem) {
-  html {
-    font-size: 125%;
-  }
-
-  .sass-introduction,
-  .sass-details {
-    width: 30rem;
+    &:hover,
+    &:active {
+      color: white;
+      background: map-get($map: $colors, $key: secondary);
+      border-color: map-get($map: $colors, $key: secondary);
+    }
   }
 }
